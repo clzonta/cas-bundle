@@ -1,0 +1,38 @@
+{
+    "name": "alexandret/phpcas-guard-bundle",
+    "type": "symfony-bundle",
+    "description": "PhpCAS Bundle using guard for Symfony3.4 and above",
+    "homepage": "https://github.com/Alexandre-T/casguard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Tranchant",
+            "email": "alexandre.tranchant@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "Alexandre.Tranchant@gmail.com",
+        "issues": "https://github.com/Alexandre-T/casguard/issues",
+        "source": "https://github.com/Alexandre-T/casguard"
+    },
+    "require": {
+        "php": "^7.1.3",
+        "jasig/phpcas": "~1.3",
+	    "symfony/security-guard": "~3.4|4.*|~5.0",
+        "symfony/config": "~3.4|4.*|~5.0",
+        "symfony/dependency-injection": "~3.4|4.*|~5.0",
+        "symfony/routing": "~3.4|4.*|~5.0",
+        "symfony/yaml": "~3.4|4.*|~5.0"
+    },
+    "autoload": {
+        "psr-4": { "AlexandreT\\Bundle\\CasGuardBundle\\": "" }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "codeception/aspect-mock": "*",
+        "phpunit/phpunit": "~7.5",
+        "symfony/debug": "~3.4|4.*|~5.0",
+        "symfony/phpunit-bridge": "~3.4|4.*|~5.0"
+    }
+}
