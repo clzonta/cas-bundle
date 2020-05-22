@@ -89,14 +89,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        if (1 === version_compare('4.2.0', Kernel::VERSION)) {
-            //Version 3.4
-            $treeBuilder = new TreeBuilder();
-            $rootNode = $treeBuilder->root('cas_guard');
-        } else {
-            $treeBuilder = new TreeBuilder('cas_guard');
-            $rootNode = $treeBuilder->getRootNode();
-        }
+        $treeBuilder = new TreeBuilder('cas_guard');
+        $rootNode = $treeBuilder->getRootNode();
         $rootNode
             ->children()
                 ->scalarNode('certificate')
@@ -110,8 +104,7 @@ class Configuration implements ConfigurationInterface
                     ->info('Enter a filename to trace log or leave empty to use the default filename. Set to false to disable debug function.')
                 ->end()
                 ->scalarNode('hostname')
-                    ->isRequired()
-                    ->cannotBeEmpty()
+                    ->defaultValue('https://dsso.santafe.gob.ar/')
                     ->example('example.org')
                     ->info('Enter the hostname of the CAS server.')
                 ->end()
