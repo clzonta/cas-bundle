@@ -1,20 +1,9 @@
 {
-    "name": "alexandret/phpcas-guard-bundle",
+    "name": "clzonta/cas-bundle",
     "type": "symfony-bundle",
-    "description": "PhpCAS Bundle using guard for Symfony3.4 and above",
-    "homepage": "https://github.com/Alexandre-T/casguard",
+    "description": "Bundle de cas para symfony 4.4",
+    "homepage": "https://github.com/clzonta/cas-bundle",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexandre Tranchant",
-            "email": "alexandre.tranchant@gmail.com"
-        }
-    ],
-    "support": {
-        "email": "Alexandre.Tranchant@gmail.com",
-        "issues": "https://github.com/Alexandre-T/casguard/issues",
-        "source": "https://github.com/Alexandre-T/casguard"
-    },
     "require": {
         "php": "^7.1.3",
         "jasig/phpcas": "~1.3",
